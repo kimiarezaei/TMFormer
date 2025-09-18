@@ -7,7 +7,7 @@ from torchmetrics.classification import  BinaryAccuracy, BinaryAUROC
 import wandb
 from torch.optim.lr_scheduler import CosineAnnealingLR
 import pytorch_warmup as warmup
-
+from utils import measure_time
 
 
 
@@ -21,6 +21,7 @@ def wandbinitialization(project_name, params):
     )
 
 
+@measure_time
 def train(model, params, train_loader, validation_loader, device):
 
     start = time.time()

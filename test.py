@@ -9,7 +9,9 @@ import sklearn
 from sklearn import metrics 
 from sklearn.metrics import roc_curve, auc
 
+from utils import measure_time
 
+@measure_time
 def test(model, test_loader, device, save_dir):
     # Test phase
     test_loss = 0.0

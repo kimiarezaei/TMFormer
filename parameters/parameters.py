@@ -1,11 +1,10 @@
 import json
 
-
 my_params = {
-    "architecture": "CNN-transformer",
-    "learning_rate": 1e-2,
+    "architecture": "TMFormer",
+    "learning_rate": 1e-03,
     "warmup_period": 20,
-    "eta_min": 1e-6,
+    "eta_min": 1e-06,
     "batch_size": 1024,
     "epochs": 200,
     "random_seed": 42,
@@ -14,18 +13,28 @@ my_params = {
     "scheduler": True,
     "apply_early_stop": True,
     "stop_threshold": 5,
-    "kernel_size": 800,         
-    "embedding_dim": 256,
-    "stride": 700,  
+    
+    "kernel_size": [
+        160,
+        9
+    ],
+    "embedding_dim": [
+        128,
+        256
+    ],
+    "stride": [
+        149,
+        1
+    ],
     "num_heads": 8,
     "num_blks": 2,
     "drop_out_stoch": 0.3,
     "drop_out_att": 0.2,
     "weight_decay": 1e-5,
-    "signal_length": 19200,
+    "signal_length": int(4*60*80),
     "train_portion": 0.8,
-
 }
+
 
 
 with open('parameters/my_params.json', 'w') as json_file:

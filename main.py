@@ -12,7 +12,7 @@ from dataset_builder import MyDataset, split_dataset, MyDataLoader
 from train import train, wandbinitialization
 from test import test
 from utils import save_models, Params, folder_creator, DeviceDataLoader
-from model import MyTransformer, init_weights
+from model import TMFormer, init_weights
 today = date.today()
 
 # paths
@@ -66,7 +66,7 @@ print('split is done:',len(train_ds), len(val_ds))
 # seperating data into batches
 train_dl, validation_dl, test_dl = MyDataLoader(train_ds, val_ds, test_ds, params)
 
-model = MyTransformer(params)
+model = TMFormer(params)
 model.apply(init_weights)
 
 # move data to GPU

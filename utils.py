@@ -1,6 +1,8 @@
 import json
+from unittest import result
 import torch
 import os
+import time
 
 import numpy as np
 
@@ -66,3 +68,12 @@ def save_models(model, best_model, save_dir):
 
 
 
+def measure_time(func):
+    def wrapper(*args, **kwargs):
+        start = time.time()
+        result = func(*args, **kwargs)
+        end = time.time()
+        duration  = (end - start)/60
+        print(f"Execution time: {duration:.2f} minutes")
+        return result
+    return wrapper
