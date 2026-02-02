@@ -1,8 +1,9 @@
-# Grading-Neonatal-Hypoxic-Ischemic-Encephalopathy-Using-TMFormer-and-raw-ECG
-This repository contains code for classifying the severity of Hypoxic-Ischemic Encephalopathy (HIE) in newborns using ECG signals. 
+# Classification of Hypoxic Ischemic Encephalopathy (HIE) in Neonates using ECG and a Transformer-Based Model
+
+This repository contains codes for binary classification of infant HIE using ECG signals. 
 
 The classification is performed using a Transformer-based model called TMFormer, illustrated below:
 
 ![Model Architecture](TMFormer.png)
 
-This method is detailed in the following paper, where it is compared with other techniques. If you find this code useful, please consider citing the paper.
+This method is detailed in the following IEEEACCess paper, where it is compared with other techniques. If you find this code useful, please consider citing the paper.
