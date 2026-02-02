@@ -6,4 +6,4 @@ The classification is performed using a Transformer-based model called TMFormer,
 
 ![Model Architecture](TMFormer.png)
 
-This method is detailed in the following IEEEACCess paper, where it is compared with other techniques. If you find this code useful, please consider citing the paper.
+This method is detailed in the following IEEEAccess paper, where it is compared with other techniques. If you find this code useful, please consider citing the paper.
