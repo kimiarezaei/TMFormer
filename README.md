@@ -1,4 +1,4 @@
-# TMFormer 
+# Transformer-Based Time-Series Classification for Biomedical Signals
 
 TMFormer (Trend-Augmented Multiscale Tokenization Transformer) is a Transformer-based time-series classification model designed for brain injury classification as part of my PhD research. The model was trained and evaluated on private clinical data; therefore, the dataset and trained model cannot be shared due to data privacy restrictions. Full details and experimental results are available in my paper, **"Classification of Hypoxic Ischemic Encephalopathy (HIE) in Neonates Using ECG and a Transformer-Based Model,"** published in IEEE Access (2026).
 
