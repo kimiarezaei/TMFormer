@@ -1,0 +1,9 @@
+numpy
+torch
+torchmetrics
+wandb
+pytorch-warmup
+matplotlib
+pandas
+scikit-learn
+torchinfo
