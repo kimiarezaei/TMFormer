@@ -8,7 +8,7 @@ TMFormer (Trend-Augmented Multiscale Tokenization Transformer) is a Transformer-
 
 TMFormer introduces a tokenization approach derived from raw ECG signal attributes, capturing spatial patterns at multiple scales while modeling the signal's long-term temporal progression. The model incorporates a learnable class token and tAPE positional encoding, followed by a Transformer encoder that predicts the brain injury class.
 
-![Model Architecture](images/TMFormer.png)
+![Model Architecture](TMFormer.png)
 
 ## Highlights
 
